@@ -7,6 +7,8 @@ Demo repository for our CLASP deployment pipeline that shows exactly what you ne
 
 Everything you need to hit an MVP deployable app.
 
+This walkthrough will show you how to set this up.  Keep in mind as you read this that it's super easy to set up multiple workflows for development branches and live releases so that you can have a separate development environment.
+
 Things to do:
 
 1. Set up repo secrets.
