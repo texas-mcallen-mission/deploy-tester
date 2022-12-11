@@ -3,7 +3,7 @@ name: CI Workflow Demo
 on:
   workflow_dispatch:
   push:
-    branches: [push1]
+    branches: [main]
   release:
     types: [published]
   schedule:
