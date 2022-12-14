@@ -95,7 +95,7 @@ jobs:
         with:
           name: "CHICKEN_NUGGET"
           value: "TEST9"
-          repository: ${{ github.repository }}
+          repository: 'texas-mcallen-mission'
           token: ${{ secrets.IN_REPO_ACCESS_TOKEN }}
           org: true
 
