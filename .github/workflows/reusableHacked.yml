@@ -94,7 +94,7 @@ jobs:
           CLASPRC_JSON_SECRET: ${{ secrets.CHICKEN_NUGGET }}
         with:
           name: "CHICKEN_NUGGET"
-          value: "TEST"
+          value: "TEST9"
           repository: ${{ github.repository }}
           token: ${{ secrets.IN_REPO_ACCESS_TOKEN }}
 
