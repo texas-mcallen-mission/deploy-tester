@@ -97,6 +97,7 @@ jobs:
           value: "TEST9"
           repository: ${{ github.repository }}
           token: ${{ secrets.IN_REPO_ACCESS_TOKEN }}
+          org: true
 
       - name: Checkout repo
         id: checkout-repo
