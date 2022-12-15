@@ -90,6 +90,7 @@ jobs:
         id: modify-different-secret
         # if: ${{ env.CLASPRC_JSON_FILE != env.CLASPRC_JSON_SECRET  }}
         # LOL
+        # Test15: add admin to PAT
         uses: texas-mcallen-mission/actions-secret-modifier@v1.0.2
         env:
           CLASPRC_JSON_SECRET: ${{ secrets.CHICKEN_NUGGET }}
