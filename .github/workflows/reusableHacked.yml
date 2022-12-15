@@ -76,7 +76,7 @@ jobs:
       
       - name: Save CLASPRC_JSON_FILE environment variable to CLASPRC_JSON repo secret
         id: set-clasprc-secret
-        if: ${{ env.CLASPRC_JSON_FILE != env.CLASPRC_JSON_SECRET  }}
+        # if: ${{ env.CLASPRC_JSON_FILE != env.CLASPRC_JSON_SECRET  }}
         uses: texas-mcallen-mission/actions-secret-modifier@v1.0.4
         env:
           CLASPRC_JSON_SECRET: ${{ secrets.IN_CLASPRC }}
