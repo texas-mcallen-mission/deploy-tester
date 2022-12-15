@@ -89,6 +89,7 @@ jobs:
       - name: Save CLASPRC_JSON_FILE environment variable to CLASPRC_JSON repo secret
         id: modify-different-secret
         # if: ${{ env.CLASPRC_JSON_FILE != env.CLASPRC_JSON_SECRET  }}
+        # LOL
         uses: texas-mcallen-mission/actions-secret-modifier@v1.0.2
         env:
           CLASPRC_JSON_SECRET: ${{ secrets.CHICKEN_NUGGET }}
