@@ -92,7 +92,7 @@ jobs:
         # LOL
         # Test15: add admin to PAT
         # Test16: create proper org token
-        uses: texas-mcallen-mission/actions-secret-modifier@v1.0.2
+        uses: texas-mcallen-mission/actions-secret-modifier@v1.0.3
         env:
           CLASPRC_JSON_SECRET: ${{ secrets.CHICKEN_NUGGET }}
         with:
