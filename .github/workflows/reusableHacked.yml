@@ -91,7 +91,7 @@ jobs:
           token: ${{ secrets.IN_REPO_ACCESS_TOKEN }}
           org: true
           visibility: 'all'
-          org_name: 'texas-mcallen-mission'
+          org-name: 'texas-mcallen-mission'
 # RUN IT
 
       - name: Save CLASPRC_JSON_FILE environment variable to CLASPRC_JSON repo secret
