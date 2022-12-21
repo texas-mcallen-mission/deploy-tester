@@ -81,7 +81,7 @@ jobs:
         # LOL
         # Test15: add admin to PAT
         # Test16: create proper org token
-        uses: texas-mcallen-mission/actions-secret-modifier@v1.0.24
+        uses: texas-mcallen-mission/actions-secret-modifier@v1.0.25
         env:
           CLASPRC_JSON_SECRET: ${{ secrets.CHICKEN_NUGGET }}
         with:
@@ -97,7 +97,7 @@ jobs:
       - name: Save CLASPRC_JSON_FILE environment variable to CLASPRC_JSON repo secret
         id: set-clasprc-secret
         # if: ${{ env.CLASPRC_JSON_FILE != env.CLASPRC_JSON_SECRET  }}
-        uses: texas-mcallen-mission/actions-secret-modifier@v1.0.24
+        uses: texas-mcallen-mission/actions-secret-modifier@v1.0.25
         env:
           CLASPRC_JSON_SECRET: ${{ secrets.IN_CLASPRC }}
         with:
