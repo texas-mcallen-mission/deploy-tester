@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Call Reusable Action
-      uses: texas-mcallen-mission/deploy-google-app-script-action-typescript/@v3.0.3-dev
+      uses: texas-mcallen-mission/deploy-google-app-script-action-typescript/@v3.0.4-dev
       with:
         # Github repository information
         sha: ${{ github.sha }}
