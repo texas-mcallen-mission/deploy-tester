@@ -26,9 +26,10 @@ jobs:
         ref_name: ${{ github.ref_name }}
       # secrets:
         # THESE are the ones that are deployment-specific.
-        IN_CLASPRC_JSON: ${{ secrets.CLASPRC_JSON }}
-        IN_REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
-        IN_SCRIPT_ID: ${{ secrets.SCRIPT_ID_DEV }}
-        IN_DEPLOYMENT_ID: ${{ secrets.DEPLOYMENT_ID }} # optional.
-        IN_PARENT_ID: ${{ secrets.PARENT_ID_DEV }} # optional.
-        IN_CONFIG_DATA: ${{ secrets.CONFIG_DATA }} # optional.
+        CLASPRC_JSON: ${{ secrets.CLASPRC_JSON }}
+        REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+        SCRIPT_ID: ${{ secrets.SCRIPT_ID_DEV }}
+        DEPLOYMENT_ID: ${{ secrets.DEPLOYMENT_ID }} # optional.
+        PARENT_ID: ${{ secrets.PARENT_ID_DEV }} # optional.
+        CONFIG_DATA: ${{ secrets.CONFIG_DATA }} # optional.
+        
