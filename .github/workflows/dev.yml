@@ -20,7 +20,7 @@ jobs:
       # secrets:
         # THESE are the ones that are deployment-specific.
         CLASP_TOKEN_VALUE: ${{ secrets.CLASPRC_JSON }}
-        CLASP_TOKEN_NAME: 'CLASPRC_JSON'
+        # CLASP_TOKEN_NAME: 'CLASPRC_JSON'
         REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
         SCRIPT_ID: ${{ secrets.SCRIPT_ID_DEV }}
         PARENT_ID: ${{ secrets.PARENT_ID_DEV }} # optional.
