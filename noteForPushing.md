@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+got 404, trying another thing
 forgot to push on other project
 added env.
 swapperino
