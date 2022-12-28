@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+disabled debugging thingy
 debug tests again
 syntax fixes
 switching things around
