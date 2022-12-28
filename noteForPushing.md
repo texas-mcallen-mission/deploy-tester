@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+debug tests again
 syntax fixes
 switching things around
 adding more debugging to actions-secret-modifier
