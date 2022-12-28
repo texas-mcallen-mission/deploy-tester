@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+explicit uses_org_secret
 == => =
 updated action again
 used the right input in action
