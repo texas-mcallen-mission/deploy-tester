@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+grabbing even more debug data
 switched to using input for repo name
 getting even more debug info
 updated action-secret-modifier
