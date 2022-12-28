@@ -17,6 +17,15 @@ jobs:
     - name: Call Reusable Action
       uses: texas-mcallen-mission/deploy-google-app-script-action-typescript/@get-off-deprecated-stuff
       with:
+      # secrets:
+        # THESE are the ones that are deployment-specific.
+        CLASP_TOKEN_VALUE: ${{ secrets.CLASPRC_JSON }}
+        CLASP_TOKEN_NAME: 'CLASPRC_JSON'
+        REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+        SCRIPT_ID: ${{ secrets.SCRIPT_ID_DEV }}
+        PARENT_ID: ${{ secrets.PARENT_ID_DEV }} # optional.
+        DEPLOYMENT_ID: ${{ secrets.DEPLOYMENT_ID }} # optional.
+        CONFIG_DATA: ${{ secrets.CONFIG_DATA }} # optional.
         # Github repository information
         sha: ${{ github.sha }}
         event_name: ${{ github.event_name }}
@@ -24,12 +33,4 @@ jobs:
         job: ${{ github.job }}
         repository: ${{ github.repository }}
         ref_name: ${{ github.ref_name }}
-      # secrets:
-        # THESE are the ones that are deployment-specific.
-        CLASPRC_JSON: ${{ secrets.CLASPRC_JSON }}
-        REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
-        SCRIPT_ID: ${{ secrets.SCRIPT_ID_DEV }}
-        DEPLOYMENT_ID: ${{ secrets.DEPLOYMENT_ID }} # optional.
-        PARENT_ID: ${{ secrets.PARENT_ID_DEV }} # optional.
-        CONFIG_DATA: ${{ secrets.CONFIG_DATA }} # optional.
         
