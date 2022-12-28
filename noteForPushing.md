@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+== => =
 updated action again
 used the right input in action
 grabbing even more debug data
