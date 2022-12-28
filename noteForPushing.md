@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+getting even more debug info
 updated action-secret-modifier
 disabled debugging thingy
 debug tests again
