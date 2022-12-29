@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+trying printing out an entire script to test.
 lids are about to be flipped
 if false == false throw error
 syntax error
