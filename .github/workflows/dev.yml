@@ -28,10 +28,10 @@ jobs:
         DEPLOYMENT_ID: ${{ secrets.DEPLOYMENT_ID }} # optional.
         CONFIG_DATA: ${{ secrets.CONFIG_DATA }} # optional.
         # Github repository information
-        sha: ${{ github.sha }}
-        event_name: ${{ github.event_name }}
-        actor: ${{ github.actor }}
-        job: ${{ github.job }}
+        # sha: ${{ github.sha }}
+        # event_name: ${{ github.event_name }}
+        # actor: ${{ github.actor }}
+        # job: ${{ github.job }}
         # repository: ${{ github.repository }}
-        ref_name: ${{ github.ref_name }}
+        # ref_name: ${{ github.ref_name }}
         

@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+dropped context stuff because GUESS WHAT IT WORKS ANYWAYS
 org secret update
 trying org secret now
 =false no workie, now trying = 'false'
