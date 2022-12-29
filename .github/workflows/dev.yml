@@ -11,7 +11,7 @@ on:
 
 
 jobs:
-  call-workflow-passing-data:
+  clasp-update-aio:
     runs-on: ubuntu-latest
     steps:
     - name: Call Reusable Action
