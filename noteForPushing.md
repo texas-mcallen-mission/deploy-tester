@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+TESTING CUSTOM SECRET NAME
 ${{ inputs.USES_ORG_SECRET  == false }}
 switch to = true
 explicit uses_org_secret
