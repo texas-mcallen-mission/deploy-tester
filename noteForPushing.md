@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+added quotes in workflow
 TESTING CUSTOM SECRET NAME
 ${{ inputs.USES_ORG_SECRET  == false }}
 switch to = true
