@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+if false == false throw error
 syntax error
 more testing
 added env-test
