@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+turning off cat echo
 cat | echo
 trying printing out an entire script to test.
 lids are about to be flipped
