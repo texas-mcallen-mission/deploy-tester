@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+syntax error
 more testing
 added env-test
 testing to find ``JUMPSTRING``s
