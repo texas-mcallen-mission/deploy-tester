@@ -33,7 +33,7 @@ either make a copy of this repository, or go to the [action's repo](https://gith
 
 ``REPO_ACCESS_TOKEN``
 
-- [Personal access token](https://github.com/settings/tokens) with ``repo`` access.
+- [Personal access token](https://github.com/settings/tokens) with access to ``actions``,``secrets`` scopes.  *Note: If you want to update org secrets, you'll need to make sure that your token has authorization for those scopes.*
 
 #### ``SCRIPT_ID``
 
