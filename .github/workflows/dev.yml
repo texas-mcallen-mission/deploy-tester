@@ -23,7 +23,7 @@ jobs:
         CLASP_TOKEN_NAME: 'CLASPRC_JSON'
         REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
         USES_ORG_SECRET: false # optional.
-        ORG_VISIBILITY: all # optional, default all.
+        # ORG_VISIBILITY: all # optional, default all.
         SCRIPT_ID: ${{ secrets.SCRIPT_ID_DEV }}
         PARENT_ID: ${{ secrets.PARENT_ID_DEV }} # optional.
         DEPLOYMENT_ID: ${{ secrets.DEPLOYMENT_ID }} # optional.
