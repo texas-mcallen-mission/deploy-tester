@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+added env-test
 testing to find ``JUMPSTRING``s
 dropped context stuff because GUESS WHAT IT WORKS ANYWAYS
 org secret update
