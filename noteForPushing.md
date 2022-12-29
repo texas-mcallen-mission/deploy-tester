@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+org secret update
 trying org secret now
 =false no workie, now trying = 'false'
 added quotes in workflow
