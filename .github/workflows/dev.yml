@@ -3,7 +3,7 @@ name: CI Workflow Demo
 on:
   workflow_dispatch:
   push:
-    branches: [dev]
+    branches: [dev] # replace this with whatever branch you want to push from.
   release:
     types: [published]
   schedule:
@@ -32,6 +32,6 @@ jobs:
         event_name: ${{ github.event_name }}
         actor: ${{ github.actor }}
         job: ${{ github.job }}
-        repository: ${{ github.repository }}
+        # repository: ${{ github.repository }}
         ref_name: ${{ github.ref_name }}
         
