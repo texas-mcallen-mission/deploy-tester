@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+lids are about to be flipped
 if false == false throw error
 syntax error
 more testing
