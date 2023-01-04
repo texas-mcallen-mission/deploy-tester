@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+updating org secret instead of repo secret also worked!
 git-info.js and appsscript.json tests passed!
 modified git-info to see if it makes it through or not
 added customized appsscript.json to test and see if it gets replaced
