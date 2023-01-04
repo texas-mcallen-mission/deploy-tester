@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+first test of the day, hopefully caches have cleared up
 turning off cat echo
 cat | echo
 trying printing out an entire script to test.
