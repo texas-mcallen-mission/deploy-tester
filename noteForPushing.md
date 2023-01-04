@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+added customized appsscript.json to test and see if it gets replaced
 first test of the day, hopefully caches have cleared up
 turning off cat echo
 cat | echo
