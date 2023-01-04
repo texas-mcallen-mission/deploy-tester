@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Call Reusable Action
-      uses: texas-mcallen-mission/deploy-google-app-script-action-typescript/@v3.0.0
+      uses: texas-mcallen-mission/deploy-google-app-script-action-typescript/@testing-removing-packages
       with:
       # secrets:
         # THESE are the ones that are deployment-specific.
