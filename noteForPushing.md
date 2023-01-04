@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+trying deleting package.json, committracker.ts
 trying deleting package.json from other repo
 First Test, V3.0.0
 updating org secret instead of repo secret also worked!
