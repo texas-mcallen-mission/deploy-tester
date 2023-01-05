@@ -3,7 +3,7 @@ name: CI Workflow Demo
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main] # replace this with whatever branch you want to push from.
   release:
     types: [published]
   schedule:
@@ -11,21 +11,20 @@ on:
 
 
 jobs:
-  call-workflow-passing-data:
-    uses: texas-mcallen-mission/deploy-google-app-script-action-typescript/.github/workflows/reusable.yml@v2.5.0.1
-    with:
-      # Github repository information
-      sha: ${{ github.sha }}
-      event_name: ${{ github.event_name }}
-      actor: ${{ github.actor }}
-      job: ${{ github.job }}
-      repository: ${{ github.repository }}
-      ref_name: ${{ github.ref_name }}
-    secrets:
-      # THESE are the ones that are deployment-specific.
-      IN_CLASPRC_JSON: ${{ secrets.CLASPRC_JSON }}
-      IN_REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
-      IN_SCRIPT_ID: ${{ secrets.SCRIPT_ID_DEV }}
-      IN_DEPLOYMENT_ID: ${{ secrets.DEPLOYMENT_ID }} # optional.
-      IN_PARENT_ID: ${{ secrets.PARENT_ID_DEV }} # optional.
-      IN_CONFIG_DATA: ${{ secrets.CONFIG_DATA }} # optional.
+  clasp-update-aio:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send Codebase to AppsScript
+      uses: texas-mcallen-mission/deploy-google-app-script-action-typescript/@v3.0.1
+      with:
+      # secrets:
+        # THESE are the ones that are deployment-specific.
+        CLASP_TOKEN_VALUE: ${{ secrets.CLASPRC_JSON }}
+        CLASP_TOKEN_NAME: 'CLASPRC_JSON'
+        REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+        USES_ORG_SECRET: false # optional.
+        # ORG_VISIBILITY: all # optional, default all.
+        SCRIPT_ID: ${{ secrets.SCRIPT_ID }}
+        PARENT_ID: ${{ secrets.PARENT_ID }} # optional.
+        DEPLOYMENT_ID: ${{ secrets.DEPLOYMENT_ID }} # optional.
+        CONFIG_DATA: ${{ secrets.CONFIG_DATA }} # optional.
