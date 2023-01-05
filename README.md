@@ -11,7 +11,9 @@ Demo repository for our CLASP deployment pipeline that gets code from GitHub to 
 | CLASPRC_JSON | [***DO NOT SHARE THIS***] |
 | REPO_ACCESS_TOKEN | gh_pat_xxxxxxxxxxxxxxxxxx |
 | SCRIPT_ID | ``1ENdDRwHHCkaZhoE8mMbjWNmvy5fmFVa5hNBKaIMAbOR3zfpdAkrf2iKo`` |
-| CONFIG_DATA | ```js
+| CONFIG_DATA | *see below* |
+
+```js
     config1: {
         key1:"WORDS", // Comment
         key2:"WORDSSS",
@@ -19,8 +21,7 @@ Demo repository for our CLASP deployment pipeline that gets code from GitHub to 
     },
     config2: "WOO",
     config3: ["A","B","C","D"]
-``` |
-
+```
 
 
 #### ``CLASPRC_JSON``
