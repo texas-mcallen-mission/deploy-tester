@@ -2,6 +2,7 @@
 
 WYLO: dealing with bugs getting to public key on repo 
 
+bloop
 added better documentation
 even more cleanup
 trying deleting package.json, committracker.ts
