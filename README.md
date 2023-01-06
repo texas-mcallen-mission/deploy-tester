@@ -4,28 +4,25 @@ Demo repository for our CLASP deployment pipeline that gets code from GitHub to 
 
 ### [Link to Dev Branch of Demo](https://script.google.com/d/1ENdDRwHHCkaZhoE8mMbjWNmvy5fmFVa5hNBKaIMAbOR3zfpdAkrf2iKo/edit?usp=sharing)
 
-## Things To Setup
+## This Repository's Secrets
 
-Everything you need to hit an MVP deployable-from-github appscript project.
+| Name | Value |
+| :---: | :--- |
+| CLASPRC_JSON | [***DO NOT SHARE THIS***] |
+| REPO_ACCESS_TOKEN | gh_pat_xxxxxxxxxxxxxxxxxx |
+| SCRIPT_ID | ``1ENdDRwHHCkaZhoE8mMbjWNmvy5fmFVa5hNBKaIMAbOR3zfpdAkrf2iKo`` |
+| CONFIG_DATA | *see below* |
 
-This walkthrough will show you how to set this up.  Keep in mind as you read this that it's super easy to set up multiple workflows for development branches and live releases so that you can have a separate development environment.
+```js
+    config1: {
+        key1:"WORDS", // Comment
+        key2:"WORDSSS",
+        key3:"MOAR WORD" /*inline comment*/
+    },
+    config2: "WOO",
+    config3: ["A","B","C","D"]
+```
 
-Things to do:
-
-1. Copy over the workflow file.
-2. Set up repo secrets.
-3. Run CI for the first time.
-4. Read the supplemental information.
-
-### Copying the CI Workflow file
-
-either make a copy of this repository, or go to the [action's repo](https://github.com/texas-mcallen-mission/deploy-google-app-script-action-typescript) and copy [`reusable-stubby.yml`](https://github.com/texas-mcallen-mission/deploy-google-app-script-action-typescript/blob/main/.github/workflows/reusable-stubby.yml) over to ``.github/workflows/``.
-
-*keep in mind that the branch reference is kinda important- by default you'll get the ``main`` branch, but if you want to stick to a particular version, you can replace ``main`` on line 15 with a valid commit hash, a version number, or a different branch name.*
-
-### Setting Up Actions Secrets
-
-- *to access- go to your repository's Settings / Security / Secrets / Actions.*
 
 #### ``CLASPRC_JSON``
 
@@ -33,7 +30,7 @@ either make a copy of this repository, or go to the [action's repo](https://gith
 
 ``REPO_ACCESS_TOKEN``
 
-- [Personal access token](https://github.com/settings/tokens) with ``repo`` access.
+- [Personal access token](https://github.com/settings/tokens) with access to ``actions``,``secrets`` scopes.  *Note: If you want to update org secrets, you'll need to make sure that your token has authorization for those scopes.*
 
 #### ``SCRIPT_ID``
 
@@ -47,15 +44,7 @@ is ``1ENdDRwHHCkaZhoE8mMbjWNmvy5fmFVa5hNBKaIMAbOR3zfpdAkrf2iKo``
 
 If you want to pass through data (in JSON format) to your project, here's where to send it in.  We use this to store document ID's and stuff that we don't want to publish.  For this demo, we're passing in some fake config data that looks like this:
 
-```js
-    config1: {
-        key1:"WORDS", // Comment
-        key2:"WORDSSS",
-        key3:"MOAR WORD" /*inline comment*/
-    },
-    config2: "WOO",
-    config3: ["A","B","C","D"]
-```
+
 
 *This data gets stored inside a JS object.  Anything that legally fits inside of one of those is okay.*
 
